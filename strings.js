@@ -122,6 +122,16 @@ let cliente2_final = cliente2_array[1] + " " + cliente2_array[0]
 console.log(cliente2_final)
 console.log(cliente2_final.charAt(0))
 
+console.log(cliente3.length)
+let cliente3_corregido = cliente3.trim()  //Quitamos los espacios del principio y del final
+console.log(cliente3_corregido.length)
+let cliente3_completo = "poppins, mary"
+let cliente3_array = cliente3_completo.split(" ") //Convertimos de string a arrays
+console.log(cliente3_array)
+let cliente3_final = cliente3_array[1] + " " + cliente3_array[0]
+console.log(cliente3_final)
+console.log(cliente3_final.charAt(0))
+
 
 
 
