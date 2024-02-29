@@ -98,85 +98,36 @@ console.log(nombre_final)
 let cliente1 = "    poppins, mary    "  // "Mary Poppins"
 let cliente2 = "    mouse, mickey    "   // "Mickey Mouse"
 // Mejora del código anterior
-let cliente3 = "    de los anillos, el señor    " // "El seor De Los Anillos"
+let cliente3 = "    de los anillos, el señor    " // "El señor De Los Anillos"
 
-
-function formatearNombre(nombreCompleto) {
-    // Elimina los espacios en blanco al principio y al final
-    const nombreLimpio = nombreCompleto.trim();
-    
-    // Divide el nombre en partes usando la coma como separador
-    const partes = nombreLimpio.split(',');
-    
-    // Asegúrate de que haya al menos dos partes (apellido, nombre)
-    if (partes.length < 2) {
-      return 'Nombre inválido';
-    }
-    
-    // Capitaliza la primera letra del nombre y el apellido
-    const apellido = partes[0].charAt(0).toUpperCase() + partes[0].slice(1);
-    const nombre = partes[1].trim().charAt(0).toUpperCase() + partes[1].trim().slice(1);
-    
-    // Combina el nombre y el apellido en el formato deseado
-    const nombreFormateado = `${nombre} ${apellido}`;
-    
-    return nombreFormateado;
-  }
-  
-  // Ejemplo de uso
-  const nombreCompleto = '    poppins, mary    ';
-  const nombreFormateado = formatearNombre(nombreCompleto);
-  console.log(nombreFormateado); // Debería mostrar "Mary Poppins"
-  
 
 console.log(cliente1.length)
-let cliente1_corregido = cliente1.trim()
+let cliente1_corregido = cliente1.trim()  //Quitamos los espacios del principio y del final
 console.log(cliente1_corregido.length)
 let cliente1_completo = "poppins, mary"
-let cliente1_array = cliente1_completo.split(" ")
+let cliente1_array = cliente1_completo.split(" ") //Convertimos de string a arrays
 console.log(cliente1_array)
 let cliente1_final = cliente1_array[1] + " " + cliente1_array[0]
 console.log(cliente1_final)
 console.log(cliente1_final.charAt(0))
 
+
 console.log(cliente2.length)
-let cliente2_corregido = cliente2.trim()
+let cliente2_corregido = cliente2.trim() //Quitamos los espacios del principio y del final
 console.log(cliente2_corregido.length)
 let cliente2_completo = "mouse, mickey"
-let cliente2_array = cliente2_completo.split(" ")
+let cliente2_array = cliente2_completo.split(" ") //Convertimos de string a arrays
 console.log(cliente2_array)
 let cliente2_final = cliente2_array[1] + " " + cliente2_array[0]
 console.log(cliente2_final)
-console.log(cliente2_final.charAt(8))
+console.log(cliente2_final.charAt(0))
 
 
 
 
 // Nos han dado esta fecha:
 let fecha = "29-02-2024" // Hay que obtener : "2024-02-29"
-let fecha_array = fecha.split(" ")
+let fecha_array = fecha.split("-")
 console.log(fecha_array)
-let fecha_final = fecha_array[0] + ", " + fecha_array[1]
+let fecha_final = fecha_array[2] + "-" + fecha_array[1] + "-" + fecha_array[0]
 console.log(fecha_final)
-
-
-function convertirFecha(fecha) {
-    // Divide la fecha en partes usando el guión como separador
-    const partes = fecha.split('-');
-    
-    // Asegúrate de que haya tres partes (día, mes, año)
-    if (partes.length !== 3) {
-      return 'Fecha inválida';
-    }
-    
-    // Reorganiza las partes en el formato deseado
-    const fechaFormateada = `${partes[2]}-${partes[1]}-${partes[0]}`;
-    
-    return fechaFormateada;
-  }
-  
-  // Ejemplo de uso
-  const fechaOriginal = '29-02-2024';
-  const fechaFormateada = convertirFecha(fechaOriginal);
-  console.log(fechaFormateada); // Debería mostrar "2024-02-29"
-  
