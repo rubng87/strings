@@ -7,13 +7,13 @@ let cliente2 = "    mouse, mickey    "   // "Mickey Mouse"
 let cliente3 = "    de los anillos, el señor    " // "El señor De Los Anillos"
 let cliente4 = "     Spiderman        "
 
-
+let cliente5 = "Rubén, Francisco"
 function arreglarNombres(cliente) {
     
     //quitar espacios
-    let clienteSinEscpacios = cliente.trim()
+    let clienteSinEspacios = cliente.trim()
     // separar apellido y nombre
-    let separado = clienteSinEscpacios.split(", ")
+    let separado = clienteSinEspacios.split(", ")
     console.log(separado)
 
     let inicialApellido = separado[0].at(0).toUpperCase()
@@ -24,7 +24,7 @@ function arreglarNombres(cliente) {
     let apellidoForma2 = separado[0].at(0).toUpperCase()+separado[0].slice(1)
     console.log(apellidoForma2)
 
-    let nombrePila = separado[1].at(0).toUpperCase()+separado[0].slice(1)
+    let nombrePila = separado[1].at(0).toUpperCase()+separado[1].slice(1)
     console.log(nombrePila)
 
     let nombre_final = nombrePila.concat(" ", appelido_completo)

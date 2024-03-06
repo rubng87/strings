@@ -141,3 +141,10 @@ let fecha_array = fecha.split("-")
 console.log(fecha_array)
 let fecha_final = fecha_array[2] + "-" + fecha_array[1] + "-" + fecha_array[0]
 console.log(fecha_final)
+
+
+let fecha2 = "24-08-1987" //1987-08-24
+let fecha2_array = fecha2.split("-")
+console.log(fecha2_array);
+let fecha2_final = fecha2_array[2] + "-" + fecha2_array[1] + "-" + fecha2_array[0]
+console.log(fecha2_final);
